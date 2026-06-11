@@ -1,3 +1,11 @@
+img {
+    margin-left: 10px;
+}
+
+p {
+    margin-left: 10px;
+}
+
 h1 {
     text-align: center;
     font-weight: bolder;
@@ -50,4 +58,77 @@ h3 {
     font-size: smaller;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+}
+
+/* 1. Safe Layout Wrapper */
+.feedback-wrapper {
+    display: inline-block;
+    margin: 15px 0;
+    clear: both;
+}
+
+/* 2. Main Pill Container */
+.feedback-container {
+    display: inline-flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 4px;
+    border-radius: 50px;
+    border: 1px solid #e5e5e5;
+}
+
+/* 3. Base Buttons Style */
+.action-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    padding: 8px 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff; /* White text to contrast with the bright backgrounds */
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* 4. Click Animation */
+.action-btn:active {
+    transform: scale(0.97);
+}
+
+/* 5. Specific Blue Like Button Styles */
+.like-btn {
+    background-color: #0066cc; /* Standard digital blue */
+}
+
+.like-btn:hover {
+    background-color: #0052a3; /* Darker blue on hover */
+}
+
+/* 6. Specific Red Dislike Button Styles */
+.dislike-btn {
+    background-color: #dc3545; /* Standard digital red */
+}
+
+.dislike-btn:hover {
+    background-color: #bd2130; /* Darker red on hover */
+}
+
+/* 7. Number Counts Style (White background with transparency for high readability) */
+.count {
+    font-weight: 700;
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+}
+
+/* 8. Vertical Separation Bar */
+.divider {
+    width: 1px;
+    height: 20px;
+    background-color: #dbdbdb;
+    margin: 0 4px;
 }
