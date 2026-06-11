@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "tornadoes",
+  "name": "niamhs-guide-to-tornadoes",
   "compatibility_date": "2026-06-10",
   "observability": {
     "enabled": true
